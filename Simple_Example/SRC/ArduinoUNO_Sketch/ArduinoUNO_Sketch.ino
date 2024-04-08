@@ -24,7 +24,7 @@ LiquidCrystal LCD_DISPLAY(12, 11, 5, 4, 3, 2);
 
 void setup()
 {  
-   Serial.begin(1200);
+   Serial.begin(2400);
    pinMode(LED_PIN, OUTPUT);
    LCD_DISPLAY.begin(16, 2);
    LCD_DISPLAY.clear();
@@ -57,7 +57,7 @@ void loop()
    }
 
    SendValueToSerial();
-   delay(l000);
+   delay(250);
 }
 
 ///
